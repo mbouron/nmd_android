@@ -1,0 +1,24 @@
+#!/bin/sh -x
+
+if [ $# -lt 1 ]; then
+    exit 1
+fi
+
+localfile=$1
+remotedir=`adb shell echo '$EXTERNAL_STORAGE/nmd_data'`
+remotefile=$remotedir$localfile
+
+action="test_seek"
+if [ $# -gt 1 ]; then
+    if [ "$2" == "r" ]; then
+        action="test_randomseek"
+    fi
+fi
+
+if ! adb shell test -f "'"$remotefile"'"; then
+    adb shell mkdir -p "'"$remotedir"'"
+    adb push "$localfile" "$remotefile"
+fi
+
+adb shell am broadcast -a $action \
+    --es filename "$remotefile"

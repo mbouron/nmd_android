@@ -1,0 +1,31 @@
+#!/bin/sh -x
+
+if [ $# -lt 2 ]; then
+    exit 1
+fi
+
+if [ "$1" == "a" ]; then
+    action="test_audiodecode"
+elif [ "$1" == "v" ]; then
+    action="test_videodecode"
+else
+    exit 1
+fi
+
+localfile=$2
+remotedir=`adb shell echo '$EXTERNAL_STORAGE/nmd_data'`
+remotefile=$remotedir$localfile
+
+nb_decoders=1
+if [ $# -gt 2 ]; then
+    nb_decoders=$3
+fi
+
+if ! adb shell test -f "'"$remotefile"'"; then
+    adb shell mkdir -p "'"$remotedir"'"
+    adb push "$localfile" "$remotefile"
+fi
+
+adb shell am broadcast -a $action   \
+    --es filename "$remotefile"     \
+    --ei nb_decoders "$nb_decoders"

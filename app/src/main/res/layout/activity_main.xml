@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.nopeforge.nmd_android.AspectRatioFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:aspectRatioH="9"
+            app:aspectRatioW="16">
+
+            <TextureView
+                android:id="@+id/textureView0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </org.nopeforge.nmd_android.AspectRatioFrameLayout>
+
+        <org.nopeforge.nmd_android.AspectRatioFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:aspectRatioH="9"
+            app:aspectRatioW="16">
+
+            <TextureView
+                android:id="@+id/textureView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </org.nopeforge.nmd_android.AspectRatioFrameLayout>
+
+        <org.nopeforge.nmd_android.AspectRatioFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:aspectRatioH="9"
+            app:aspectRatioW="16">
+
+            <TextureView
+                android:id="@+id/textureView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </org.nopeforge.nmd_android.AspectRatioFrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.nopeforge.nmd_android.AspectRatioFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:aspectRatioH="9"
+            app:aspectRatioW="16">
+
+            <TextureView
+                android:id="@+id/textureView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </org.nopeforge.nmd_android.AspectRatioFrameLayout>
+
+        <org.nopeforge.nmd_android.AspectRatioFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:aspectRatioH="9"
+            app:aspectRatioW="16">
+
+            <TextureView
+                android:id="@+id/textureView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </org.nopeforge.nmd_android.AspectRatioFrameLayout>
+
+        <org.nopeforge.nmd_android.AspectRatioFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:aspectRatioH="9"
+            app:aspectRatioW="16">
+
+            <TextureView
+                android:id="@+id/textureView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </org.nopeforge.nmd_android.AspectRatioFrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.nopeforge.nmd_android.AspectRatioFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:aspectRatioH="9"
+            app:aspectRatioW="16">
+
+            <TextureView
+                android:id="@+id/textureView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </org.nopeforge.nmd_android.AspectRatioFrameLayout>
+
+        <org.nopeforge.nmd_android.AspectRatioFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:aspectRatioH="9"
+            app:aspectRatioW="16">
+
+            <TextureView
+                android:id="@+id/textureView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </org.nopeforge.nmd_android.AspectRatioFrameLayout>
+
+        <org.nopeforge.nmd_android.AspectRatioFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:aspectRatioH="9"
+            app:aspectRatioW="16">
+
+            <TextureView
+                android:id="@+id/textureView8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </org.nopeforge.nmd_android.AspectRatioFrameLayout>
+    </LinearLayout>
+</LinearLayout>
